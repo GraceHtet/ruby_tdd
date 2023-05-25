@@ -1,10 +1,10 @@
 class Solver
-  def factorial(n)
-    raise ArgumentError, 'Factorial number should be 0 or positive' if n.negative?
+  def factorial(num)
+    raise ArgumentError, 'Factorial number should be 0 or positive' if num.negative?
 
     result = 1
 
-    (1..n).each do |i|
+    (1..num).each do |i|
       result *= i
     end
     result
@@ -14,18 +14,15 @@ class Solver
     word.reverse
   end
 
-  def fizzbuzz(n)
-    res = nil
-      case
-      when n % 3 == 0 && n % 5 == 0
-        res = 'fizzbuzz'
-      when n % 3 == 0
-        res = 'fizz'
-      when n % 5 == 0
-        res = 'buzz'
-      end
-
-      res
+  def fizzbuzz(num)
+    if (num % 3).zero? && (num % 5).zero?
+      'fizzbuzz'
+    elsif (num % 3).zero?
+      'fizz'
+    elsif (num % 5).zero?
+      'buzz'
+    else
+      num.to_s
+    end
   end
-  
 end
