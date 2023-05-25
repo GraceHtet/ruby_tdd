@@ -13,4 +13,10 @@ class Solver
   def reverse(word)
     word.reverse
   end
+
+  def fizzbuzz(n)
+    (1..n).each do |i|
+
+    end
+  end
 end
