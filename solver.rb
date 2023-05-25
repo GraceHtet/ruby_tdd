@@ -2,6 +2,8 @@ class Solver
   def factorial(num)
     raise ArgumentError, 'Factorial number should be 0 or positive' if num.negative?
 
+    return 1 if num.zero?
+
     result = 1
 
     (1..num).each do |i|
