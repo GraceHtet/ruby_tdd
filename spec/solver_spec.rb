@@ -27,5 +27,9 @@ describe Solver do
     it 'should return fizz if the number is only divisible by 5 ' do
       expect(solver.fizzbuzz(10)).to eql('buzz')
     end
+
+    it 'should return a number in string format ' do
+      expect(solver.fizzbuzz(11)).to eql('11')
+    end
   end
 end
