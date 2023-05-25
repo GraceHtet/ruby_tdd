@@ -6,8 +6,12 @@ describe Solver do
 
     it 'Should validate factorial of a number' do
       expect {solver.factorial(-5)}.to raise_error(ArgumentError, 'Factorial number should be 0 or positive')
-      
+
       expect(solver.factorial(5)).to eq(120)
+    end
+
+    it 'should reverse a string' do
+      expect(solver.reverse('hello')).to eql('olleh')
     end
   end
 end
