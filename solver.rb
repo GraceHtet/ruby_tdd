@@ -19,6 +19,8 @@ class Solver
       case
       when n % 3 == 0 && n % 5 == 0
         res = 'fizzbuzz'
+      when n % 3 == 0
+        res = 'fizz'
       end
 
       res
