@@ -21,6 +21,8 @@ class Solver
         res = 'fizzbuzz'
       when n % 3 == 0
         res = 'fizz'
+      when n % 5 == 0
+        res = 'buzz'
       end
 
       res
