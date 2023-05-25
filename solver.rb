@@ -15,8 +15,13 @@ class Solver
   end
 
   def fizzbuzz(n)
-    (1..n).each do |i|
+    res = nil
+      case
+      when n % 3 == 0 && n % 5 == 0
+        res = 'fizzbuzz'
+      end
 
-    end
+      res
   end
+  
 end
