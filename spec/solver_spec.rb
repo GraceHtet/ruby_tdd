@@ -13,5 +13,9 @@ describe Solver do
     it 'should reverse a string' do
       expect(solver.reverse('hello')).to eql('olleh')
     end
+
+    it 'should return fizzbuzz if number is divisible by both 3 and 5' do
+      expect(solver.fizzbuzz(15)).to eql('fizzbuzz')
+    end
   end
 end
