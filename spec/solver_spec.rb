@@ -19,5 +19,9 @@ describe Solver do
     it 'should return fizzbuzz if the number is divisible by both 3 and 5' do
       expect(solver.fizzbuzz(15)).to eql('fizzbuzz')
     end
+
+    it 'should return fizz if the number is only divisible by 3 ' do
+      expect(solver.fizzbuzz(6)).to eql('fizz')
+    end
   end
 end
